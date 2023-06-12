@@ -35,9 +35,6 @@ export default function App(): JSX.Element {
   };
 
   const startTimer = () => {
-    if (isRunning) {
-      return;
-    }
     setIsRunning(true);
     const id = setInterval(() => {
       setTotalSeconds(prevSeconds => prevSeconds - 1);
